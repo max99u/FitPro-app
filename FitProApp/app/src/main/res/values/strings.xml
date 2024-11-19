@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FitProApp</string>
+    <string name="nav_home">Perfil</string>
+    <string name="nav_history">Historial</string>
+    <string name="nav_register">Entrenamiento</string>
+    <string name="nav_progress">Ejercicios</string>
+    <string name="nav_settings">Ajustes</string>
+</resources>
