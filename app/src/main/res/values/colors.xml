@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="selected_color">#FFFFFF</color> <!-- Color blanco para seleccionados -->
-    <color name="unselected_color">#808080</color> <!-- Color gris para no seleccionados -->
-</resources>
