@@ -7,11 +7,29 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitProAppMy"
         tools:targetApi="31">
+        <activity
+            android:name=".AjustesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EjerciciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleEntrenamientoActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".EntrenamientoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

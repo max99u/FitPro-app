@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- Define un nuevo color para los botones y la Toolbar -->
+    <color name="dark_gray">#4A4A4A</color> <!-- Tono gris oscuro para los botones -->
+    <color name="light_blue">#03DAC5</color> <!-- Teal_200 como color azul clarito para la Toolbar -->
 </resources>

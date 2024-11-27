@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Estilo para los botones con esquinas redondeadas, fondo oscuro y texto blanco -->
+    <style name="Button.RoundCorners.DarkGray" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.RoundCorners</item>
+        <item name="android:backgroundTint">@color/dark_gray</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Estilo para los botones con esquinas redondeadas y fondo blanco -->
+    <style name="Button.RoundCorners.White" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.RoundCorners</item>
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="android:textColor">@color/dark_gray</item> <!-- Texto en gris oscuro para contraste -->
+    </style>
+
+    <!-- ShapeAppearance para esquinas redondeadas -->
+    <style name="ShapeAppearance.RoundCorners" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">16dp</item> <!-- Ajusta este valor según el nivel de redondeo deseado -->
+    </style>
+
+</resources>

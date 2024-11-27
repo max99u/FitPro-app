@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Nombre del ejercicio -->
+    <TextView
+        android:id="@+id/tv_nombre_ejercicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ejercicio"
+        android:textSize="16sp"
+        android:padding="8dp" />
+
+    <!-- Campo editable para repeticiones -->
+    <EditText
+        android:id="@+id/et_repeticiones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Reps"
+        android:inputType="number"
+        android:padding="8dp" />
+
+    <!-- Campo editable para peso -->
+    <EditText
+        android:id="@+id/et_peso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Peso"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+</LinearLayout>

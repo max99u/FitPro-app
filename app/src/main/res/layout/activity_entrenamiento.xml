@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntrenamientoActivity">
+
+    <!-- Toolbar con flecha de retroceso -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Entrenamiento" />
+
+    <!-- Contenedor principal con enfoque en distribución de espacio -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <!-- Botón inicial grande en la parte superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btn_empezar_entrenamiento"
+                style="@style/Button.RoundCorners.White"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:padding="20dp"
+                android:text="Empezar entrenamiento"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Contenedor para los botones de plantillas en la parte inferior -->
+        <LinearLayout
+            android:id="@+id/layout_plantillas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp">
+
+            <!-- Primera fila de botones de plantillas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_plantilla_brazo"
+                    style="@style/Button.RoundCorners.White"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="Plantilla Brazos"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_plantilla_pecho"
+                    style="@style/Button.RoundCorners.White"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:text="Plantilla Pecho"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Segunda fila de botones de plantillas -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_plantilla_pierna"
+                    style="@style/Button.RoundCorners.White"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:text="Plantilla Piernas"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_plantilla_hombro"
+                    style="@style/Button.RoundCorners.White"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="8dp"
+                    android:text="Plantilla Hombros"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Formulario de entrenamiento (oculto inicialmente) -->
+        <LinearLayout
+            android:id="@+id/formulario_entrenamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+
+        <!-- Campos del formulario -->
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del ejercicio" />
+
+        <EditText
+            android:id="@+id/et_repeticiones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repeticiones"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Peso (kg)"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btn_guardar_ejercicio"
+            style="@style/Button.RoundCorners.DarkGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar ejercicio" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_entrenamientos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp" />
+
+        <!-- Botón para finalizar entrenamiento -->
+        <Button
+            android:id="@+id/btn_guardar_entrenamiento"
+            style="@style/Button.RoundCorners.DarkGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar entrenamiento" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!-- Barra de navegación inferior -->
+<com.google.android.material.bottomnavigation.BottomNavigationView
+android:id="@+id/bottom_navigation"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="bottom"
+app:menu="@menu/bottom_nav_menu" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
