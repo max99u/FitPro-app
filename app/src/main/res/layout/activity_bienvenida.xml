@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a FitProApp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Una aplicación que permite registrar tu entrenamiento de una manera simple para seguir el progreso y evolución de tu cuerpo."
+        android:gravity="center"
+        android:paddingTop="16dp" />
+
+    <Button
+        android:id="@+id/btn_continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

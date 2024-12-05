@@ -179,7 +179,24 @@ public class EntrenamientoActivity extends AppCompatActivity {
                 listaEjercicios.add(new Entrenamiento(0, "Tríceps posterior", 0, 0, "0r / 0kg"));
                 listaEjercicios.add(new Entrenamiento(0, "Tríceps anterior", 0, 0, "0r / 0kg"));
                 break;
-            // Más plantillas...
+            case "pecho":
+                listaEjercicios.add(new Entrenamiento(0, "Press banca", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Press banca inclinado", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Fondos", 0, 0.0, null)); // Fondos con peso corporal
+                listaEjercicios.add(new Entrenamiento(0, "Aperturas", 0, 0.0, null));
+                break;
+            case "pierna":
+                listaEjercicios.add(new Entrenamiento(0, "Sentadilla", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Prensa", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Sentadilla hack", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Extensión de cuádriceps", 0, 0.0, null));
+                break;
+            case "hombro":
+                listaEjercicios.add(new Entrenamiento(0, "Press militar", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Elevaciones laterales", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Elevaciones frontales", 0, 0.0, null));
+                listaEjercicios.add(new Entrenamiento(0, "Elevaciones al mentón", 0, 0.0, null));
+                break;
         }
 
         layoutPlantillas.setVisibility(View.GONE); // Oculta las plantillas
